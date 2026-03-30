@@ -320,16 +320,27 @@ h1, h2, h3, h4, .post-title, .site-avatar-name {
   line-height: 1.8;
 }
 
-// 5. PROFILE PICTURE STYLING
-// Use class="profile-nav" in your HTML to trigger this
+// 5. PROFILE PICTURE STYLING (BIGGER & CLOSER)
 .profile-nav {
   border-radius: 50% !important;
-  width: 50px !important;
-  height: 50px !important;
+  width: 65px !important;   // Increased from 50px
+  height: 65px !important;  // Increased from 50px
   object-fit: cover;
   vertical-align: middle;
-  margin-right: 12px;
-  border: 2px solid $accent-blue;
+  margin-right: 8px !important; // Reduced from 12px to pull text closer
+  border: 2px solid #3182ce;
+  display: inline-block;
+}
+
+// 8. ALIGN THE HEADER TEXT
+.site-info {
+  display: flex;
+  align-items: center; // This keeps the text vertically centered with the bigger pic
+}
+
+.site-name {
+  margin-left: 0 !important; // Removes any default padding shifting it right
+  letter-spacing: -1px;      // Makes the title look a bit more modern/designed
 }
 
 // 6. READING TIME TAG
