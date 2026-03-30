@@ -388,3 +388,45 @@ a {
     color: $text-color;
   }
 }
+
+/* --- AI OVERSIGHT HEADER: SINGLE LINE LAYOUT --- */
+
+.site-info {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important; /* Centers everything vertically */
+  flex-wrap: nowrap !important;   /* Forces one single line */
+  padding: 20px 0 !important;
+}
+
+/* 1. THE BIG PROFILE PIC */
+.profile-nav {
+  border-radius: 50% !important;
+  width: 90px !important;      /* Large and visible */
+  height: 90px !important;
+  min-width: 90px !important;  /* Prevents squishing */
+  object-fit: cover !important;
+  margin-right: 20px !important; /* Space between pic and title */
+  border: 3px solid #3182ce;
+}
+
+/* 2. THE TITLE (STAYS ON ONE LINE) */
+.site-name {
+  font-size: 2.4rem !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important; /* Prevents "AI" and "Oversight" from splitting */
+  line-height: 1 !important;
+  letter-spacing: -1px;
+}
+
+/* 3. THE DESCRIPTION (PUSHED TO THE RIGHT WITH A DIVIDER) */
+.site-description {
+  margin: 0 0 0 25px !important; 
+  padding-left: 25px !important;
+  border-left: 2px solid #eee !important; /* Vertical line divider */
+  font-size: 0.9rem !important;
+  color: #777 !important;
+  line-height: 1.4 !important;
+  max-width: 350px !important;
+}
