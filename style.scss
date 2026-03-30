@@ -155,11 +155,8 @@ img {
 }
 
 .masthead {
-  display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 30px 0;
-	border-bottom: 1px solid #eee;
+  padding: 20px 0;
+  border-bottom: 1px solid $lightGray;
 
   @include mobile {
     text-align: center;
@@ -168,11 +165,9 @@ img {
 
 .site-avatar {
   float: left;
-  width: 100px;
-  height: 100px;
-  margin-right: 10px;
-  display: block;
-  object-fit: cover;
+  width: 70px;
+  height: 70px;
+  margin-right: 15px;
 
   @include mobile {
     float: none;
@@ -186,8 +181,7 @@ img {
 }
 
 .site-info {
-  display: flex;
-	align-items: center;
+  float: left;
 
   @include mobile {
     float: none;
@@ -197,20 +191,19 @@ img {
 }
 
 .site-name {
-  margin right: 15px;
+  margin: 0;
   color: $darkGray;
   cursor: pointer;
   font-family: $helveticaNeue;
-  font-weight: 600;
-  font-size: 2.5rem;
+  font-weight: 300;
+  font-size: 28px;
+  letter-spacing: 1px;
 }
 
 .site-description {
-  margin: 0;
-  opacity: 0.8;
-  line-height: 1.4;
+  margin: -5px 0 0 0;
   color: $gray;
-  font-size: 1rem;
+  font-size: 16px;
 
   @include mobile {
     margin: 3px 0;
@@ -218,8 +211,7 @@ img {
 }
 
 nav {
-  display: flex;
-	gap: 25px;
+  float: right;
   margin-top: 23px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
   font-size: 18px;
@@ -296,145 +288,92 @@ footer {
 @import "highlights";
 @import "svg-icons";
 
-// --- AI OVERSIGHT CUSTOM UPDATES ---
-
-// 1. IMPORT ACADEMIC FONTS
-@import url('https://fonts.googleapis.com');
-
-// 2. DEFINE THE OVERSIGHT COLOR PALETTE
-$bg-color: #fcfcfc;
-$text-color: #1a202c;     
-$link-color: #2b6cb0;     
-$accent-blue: #3182ce;    
-$light-gray: #a0aec0;     
-
-// 3. OVERRIDE GLOBAL STYLES
-body {
-  background-color: $bg-color !important;
-  color: $text-color !important;
-  font-family: 'Open Sans', sans-serif !important;
-  border-top: 5px solid $accent-blue; 
+/* Custom Header Overrides for AI Oversight */
+.masthead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+  border-bottom: 1px solid #e5e5e5;
+  float: none;
+  width: 100%;
 }
 
-// 4. ACADEMIC TYPOGRAPHY (POSTS & HEADERS)
-h1, h2, h3, h4, .post-title, .site-avatar-name {
-  font-family: 'Merriweather', serif !important;
-  color: $text-color !important;
-}
-
-.post-content {
-  font-family: 'Merriweather', serif !important;
-  font-size: 1.15rem;
-  line-height: 1.8;
-}
-
-/* --- ULTIMATE HEADER FIX --- */
-
-/* 1. FORCE EVERYTHING INTO A SINGLE FLEX ROW */
 .site-info {
-  display: flex !important;
-  align-items: center !important;
-  flex-wrap: nowrap !important; /* Prevents the text from jumping under the pic */
-  padding: 30px 0 !important;
-  max-width: 1000px !important;
-  margin: 0 auto !important;
+  display: flex;
+  align-items: center;
+  float: none;
 }
 
-/* 2. MAKE THE PIC BIG AND GIVE IT A RIGHT MARGIN */
-.profile-nav {
-  border-radius: 50% !important;
-  width: 90px !important;
-  height: 90px !important;
-  min-width: 90px !important; /* Prevents it from getting squished */
-  object-fit: cover !important;
-  margin-right: 20px !important; /* This creates the gap you need */
-  border: 3px solid #3182ce !important;
+.site-avatar {
+  float: none;
+  margin: 0 25px 0 0;
+  display: flex;
 }
 
-/* 3. FIX THE TITLE SPACING */
+.site-avatar img {
+  width: 100px; 
+  height: auto;
+  border-radius: 4px;
+}
+
 .site-name {
-  font-size: 2.5rem !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  white-space: nowrap !important; /* Keeps AI Oversight on one line */
-  letter-spacing: -1px !important;
+  margin: 0;
+  padding-right: 20px;
+  border-right: 1px solid #ddd;
+  font-size: 2.6rem;
+  line-height: 1;
 }
 
-/* 4. FIX THE DESCRIPTION OVERLAP */
+.site-name a {
+  color: #111;
+  text-decoration: none;
+}
+
 .site-description {
-  margin: 0 0 0 20px !important; /* Pushes it away from the title */
-  padding-left: 20px !important;
-  border-left: 2px solid #eee !important; /* Adds a nice divider */
-  font-size: 0.9rem !important;
-  color: #777 !important;
-  line-height: 1.4 !important;
-  max-width: 300px !important;
+  margin: 0;
+  padding-left: 20px;
+  font-size: 1.05rem;
+  color: #777;
+  line-height: 1.3;
+  max-width: 320px;
 }
 
-/* 5. FIX THE NAVIGATION OVERLAP */
-.header-nav {
-  margin-top: 0 !important;
-  float: right !important;
-  text-align: right !important;
+nav {
+  float: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
 }
 
-
-// 6. READING TIME TAG
-.reading-time {
-  font-size: 0.8rem;
-  color: $light-gray;
-  text-transform: uppercase;
-  letter-spacing: 1.2px;
-  font-weight: 600;
-  margin-left: 10px;
+nav a {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
 }
 
-// 7. CLEANER LINKS
-a {
-  color: $link-color;
-  &:hover {
-    color: $text-color;
+/* Ensure proper layout on smaller screens */
+@media screen and (max-width: 768px) {
+  .masthead {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
-}
-
-/* --- AI OVERSIGHT HEADER: SINGLE LINE LAYOUT --- */
-
-.site-info {
-  display: flex !important;
-  flex-direction: row !important;
-  align-items: center !important; /* Centers everything vertically */
-  flex-wrap: nowrap !important;   /* Forces one single line */
-  padding: 20px 0 !important;
-}
-
-/* 1. THE BIG PROFILE PIC */
-.profile-nav {
-  border-radius: 50% !important;
-  width: 90px !important;      /* Large and visible */
-  height: 90px !important;
-  min-width: 90px !important;  /* Prevents squishing */
-  object-fit: cover !important;
-  margin-right: 20px !important; /* Space between pic and title */
-  border: 3px solid #3182ce;
-}
-
-/* 2. THE TITLE (STAYS ON ONE LINE) */
-.site-name {
-  font-size: 2.4rem !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  white-space: nowrap !important; /* Prevents "AI" and "Oversight" from splitting */
-  line-height: 1 !important;
-  letter-spacing: -1px;
-}
-
-/* 3. THE DESCRIPTION (PUSHED TO THE RIGHT WITH A DIVIDER) */
-.site-description {
-  margin: 0 0 0 25px !important; 
-  padding-left: 25px !important;
-  border-left: 2px solid #eee !important; /* Vertical line divider */
-  font-size: 0.9rem !important;
-  color: #777 !important;
-  line-height: 1.4 !important;
-  max-width: 350px !important;
+  .site-info {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .site-avatar {
+    margin: 0 0 15px 0;
+  }
+  .site-name {
+    border-right: none;
+    padding-right: 0;
+    margin-bottom: 5px;
+  }
+  .site-description {
+    padding-left: 0;
+  }
 }
