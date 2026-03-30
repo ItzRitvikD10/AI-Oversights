@@ -13,6 +13,23 @@
 /* BASE RULES */
 /**************/
 
+/* Make the blog text readable and professional */
+article {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+/* Round the profile image in the corner */
+.profile-nav {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
 html {
   font-size: 100%;
 }
