@@ -9,7 +9,7 @@ name: AI Oversight
 description: A blog exploring the intersection of AI, ethics, and society. Built with Jekyll and Github.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://stock.adobe.com/search?k=%22ai+letter+logo%22
+avatar: images/profile.png
 
 #Name
 author: Ritvik Diada
