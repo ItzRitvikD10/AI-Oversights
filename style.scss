@@ -165,8 +165,8 @@ img {
 
 .site-avatar {
   float: left;
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
   margin-right: 15px;
 
   @include mobile {
@@ -335,9 +335,9 @@ h1, h2, h3, h4, .post-title, .site-avatar-name {
 /* 2. MAKE THE PIC BIG AND GIVE IT A RIGHT MARGIN */
 .profile-nav {
   border-radius: 50% !important;
-  width: 200px !important;
-  height: 200px !important;
-  min-width: 200px !important; /* Prevents it from getting squished */
+  width: 90px !important;
+  height: 90px !important;
+  min-width: 90px !important; /* Prevents it from getting squished */
   object-fit: cover !important;
   margin-right: 20px !important; /* This creates the gap you need */
   border: 3px solid #3182ce !important;
