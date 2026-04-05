@@ -2,7 +2,7 @@
 Title: "The Admission Machine: Can an Algorithm Hear My Voice?"
 Date: 2026-03-30
 Author: "Ritvik Diada"
-Tags: [Education, Generative AI]
+tags: [Education, Generative AI]
 pullquote: "The real danger in using AI for education is what's known as the 'Black Box' problem."
 ---
 
