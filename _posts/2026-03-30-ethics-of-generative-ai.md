@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "The Admission Machine: Can an Algorithm Hear My Voice?"
-date: 2026-03-30
-author: "Ritvik Diada"
+Title: "The Admission Machine: Can an Algorithm Hear My Voice?"
+Date: 2026-03-30
+Author: "Ritvik Diada"
 ---
 
 Last night, as I was proofreading an essay for a summer program, I caught myself wondering who—or what—would actually be on the other side of the "Submit" button. We talk a lot about AI in the classroom, but we rarely talk about the "Admission Machine." In the race to process tens of thousands of applications, many institutions are turning to Large Language Models (LLMs) to scan for sentiment, keywords, and "fit."
