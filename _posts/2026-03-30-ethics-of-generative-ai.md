@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Admission Machine: Can an Algorithm Hear My Voice?"
-description: "An analysis of AI's growing role in college admissions and the ethical risks of algorithmic bias."
+date: 2026-03-30
 author: "Ritvik Diada"
 ---
 
