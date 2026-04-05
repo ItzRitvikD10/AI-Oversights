@@ -2,7 +2,7 @@
 Title: "The Digital Second Opinion: When AI Enters the Exam Room"
 Date: 2026-04-05
 Author: "Ritvik Diada"
-Tags: [Healthcare, Ethics]
+tags: [Healthcare, Ethics]
 pullquote: "We won't just be digitizing medicine — we'll be digitizing our own human prejudices."
 ---
 
