@@ -15,5 +15,5 @@ I’m fascinated by the power of these tools, but I'm also worried about the "bl
 I'm always looking for feedback on my research or new perspectives on AI policy. You can reach out to me through the channels below.
 
 *   **Professional:** Connect with me on [LinkedIn](https://www.linkedin.com/in/ritvik-diada-3b74013b9/) to see my latest projects.
-*   **Collaborate:** For research inquiries or speaking, feel free to email me at [ritvikdiada@gmail.com](mailto:ritvikdiada@gmail.com).
+*   **Collaborate:** For research inquiries or speaking, feel free to email me at [ritvikdiada@gmail.com](mailto:ai.oversight10@gmail.com).
 *   **Discussion:** You can also leave a comment on any of my posts using the GitHub-powered discussion section at the bottom.
